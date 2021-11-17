@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>win-asp-core-iis.Migrator</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>win-asp-core-iis.Migrator</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="appsettings.json;log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Castle.Log4Net" Version="5.13.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\win-asp-core-iis.Core\win-asp-core-iis.Core.csproj" />
+    <ProjectReference Include="..\win-asp-core-iis.EntityFrameworkCore\win-asp-core-iis.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

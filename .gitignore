@@ -1,0 +1,9 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# IDEs and editors
+.vs/
+obj/
+bin/
+aspnet-core/src/win-asp-core-iis.Web.Host/App_Data/Logs/
+aspnet-core/src/win-asp-core-iis.Web.Mvc/App_Data/Logs/
+aspnet-core/src/win-asp-core-iis.Migrator/Logs/Logs.txt
